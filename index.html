@@ -74,8 +74,11 @@
     footer a:hover { color: var(--green); text-decoration: underline; }
     footer a.gongan { display: inline-flex; align-items: center; gap: 4px; }
     footer a.gongan img { width: 14px; height: 15px; }
+    .legal { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; }
+    .legal a { display: block; padding: 8px 0; text-underline-offset: 3px; }
     @media (max-width: 640px) {
       main { margin: 0; padding: 28px 20px 32px; border: 0; }
+      .legal { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -104,7 +107,17 @@
       <dt>网站 / Website</dt>
       <dd><a href="https://www.aitronservice.com">https://www.aitronservice.com</a></dd>
     </dl>
+    <h2>Legal</h2>
+    <ul class="legal" aria-label="协议与规则">
+      <li><a href="legal/terms.html">用户服务协议</a></li>
+      <li><a href="legal/privacy.html">隐私政策</a></li>
+      <li><a href="legal/payment.html">付款与制作须知</a></li>
+      <li><a href="legal/coupons.html">优惠券与邀请规则</a></li>
+      <li><a href="legal/minors.html">未成年人个人信息保护规则</a></li>
+      <li><a href="legal/closure.html">账号注销须知</a></li>
+    </ul>
     <footer>
+      <p><a href="legal/terms.html">用户服务协议</a> · <a href="legal/privacy.html">隐私政策</a> · <a href="legal/index.html">全部协议与规则</a></p>
       <p>© 2026 深圳市智速工场科技有限公司</p>
       <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">粤ICP备2026179733号-1</a></p>
       <p><a class="gongan" href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002019774" target="_blank" rel="noreferrer"><img src="gongan.png" alt="" width="14" height="15" />粤公网安备44030002019774号</a></p>
